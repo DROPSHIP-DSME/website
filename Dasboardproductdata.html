@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboardproductdata</title>
+    <link rel="icon" href="favicon.png" type="image/png" sizes="256*256" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="style3.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src=
+"https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.js"></script>
+  <link
+    rel="stylesheet"
+    href=
+"https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.css"
+  />
+  <link
+    rel=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    type="text/css"
+  />
+  
+  <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+  </script>
+  <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+  </script>
+  
+
+</head>
+
+<body>
+  <div class="navdiv p-1 px-6">
+    <div class="imgdirdiv">
+      <div class="outerlogo2">
+        <img style="width: 65px; margin-top: 3px;" src="img/newlogo.png">
+        <!-- <p style="color:white; text-align: center; font-weight: bold;">DROPSHIP</p> -->
+      </div>
+      <div class="mt-3 ms-6">
+          <img class="searimg" src="img/newserch.png">
+          <input style="border: none;" class="inputboxnav " type="search" placeholder="Search" aria-label="Search">
+      </div>
+    </div>
+    <div class="imgdirdiv " style="align-self:center">
+      <div>
+        <div >
+          <select name="cars" id="cars" class="nacdropdown">
+            <option class="optiondiv" value="volvo">United States</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+        <p class="stdrop mb-0">store.dropship.shopping</p>
+      </div>
+      <div class="mx-4">
+        <img class="Sneakersnav" src="img/sneaker.png">
+      </div>
+      <div style="align-self: center;">
+        <img  src="img/download.png">
+      </div>
+    </div>
+  </div>
+
+<div class="sidebar ps-6 mt-12">
+  <a href="Dashboardhome.html"><img class="me-2" src="img/home.png"> Home</a>
+  <a href="Dasboardproductdata.html"><img class="me-2" src="img/redproduct.png"></i> Products</a>
+  <a href="Dasboardorder.html"><img class="me-2" src="img/ordericon.png"></i> Orders</a>
+  <a href="Dashboardchattbl.html"><img class="me-2"src="img/chaticon.png"></i> Chats</a>
+  <a href="Dasboardsalesanalytics.html"><img class="me-2" src="img/sales.png"> Sales Analytics</a>
+  <a href="Dasboardadvertisment.html"><img class="me-2" src="img/notification.png"></i> Advertisements</a>
+  <a href="Dasboardsubscriptions.html"><img class="me-2" src="img/subsuscribe.png"></i> Subscriptions</a>
+  <hr style="margin-left: -75px;margin-top: 30px;">
+  <a href="Dasboardmyaccount.html"><img class="me-2" src="img/myacc.png"> My Account</a>
+  <a href="Dasboardsetting.html"><img class="me-2" src="img/setting.png"></i> Settings</a>
+</div>
+
+<div class="main ">
+	<div class="mx-5 py-4">
+		<p class="withdrawtext">Products (316)</p>
+	</div>
+	<div class="imgspacediv mx-5">
+		<div class="imgdirdiv">
+  		<div class="selectdiv">
+    		<p class="Viewtext">VIEW</p>
+    		<select name="cars" id="cars" class="selectbox">
+			    <option class="optiondiv" value="volvo">All Categories</option>
+			    <option value="saab">Saab</option>
+			    <option value="opel">Opel</option>
+			    <option value="audi">Audi</option>
+		    </select>
+  	  </div>
+    	<div class="selectdiv">
+    		<p class="Viewtext">SORT BY</p>
+	    		<select name="cars" id="cars" class="selectbox1">
+				    <option value="volvo">Recently Added</option>
+				    <option value="saab">Saab</option>
+				    <option value="opel">Opel</option>
+				    <option value="audi">Audi</option>
+				  </select>
+    	</div>
+			<div class="selectdrop imgdirdiv pt-2 mt-3 ms-3">
+		    <input style="margin: 4px;" type="checkbox" id="cloth" name="cloth1" value="shirt">
+		    <label class="shirttext">Select All</label><br>
+			</div>
+			<div class="mt-3">
+				<img class="shareimg ms-3" src="img/edit.png">
+			</div>
+    	<div class="mt-3">
+    		<img class="shareimg ms-3" src="img/delete.png">
+    	</div>
+  	</div>
+  	<div class="mt-3">
+          <div class="dasprodiv me-3">
+    			<p class="dasprotext px-3 py-2">SEARCH</p>
+    		</div>
+      </div>
+	</div>
+
+	<div class="imgdirdiv mx-5  mt-5">
+  	<div class="px-2">
+  		<a href="Dashboardproduct.html"><img class="shoes4img" src="img/shoes.png"></a>
+  		<div class="imgspacediv my-2">
+  			<div class="p-2">
+  				<p class="blsnetext">Sneakers <br>
+	  				<span class="salepricetext7">$55.00</span> 
+	  				<br>
+	  				<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="sfapricetext">4.5</span><br>
+						<span class="sodertext">Orders (256)</span>
+  				</p>
+  			</div>
+				<div>
+					<input style="margin: 4px;" type="checkbox" id="cloth" name="cloth1" value="shirt">
+				</div>
+  		</div>
+  	</div>
+
+  	<div class="px-2">
+  		<a href="Dashboardproduct.html"><img class="shoes4img" src="img/shoes.png"></a>
+  		<div class="imgspacediv my-2">
+  			<div class="p-2">
+  				<p class="blsnetext">Sneakers <br>
+	  				<span class="salepricetext7">$55.00</span> 
+	  				<br>
+	  				<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="sfapricetext">4.5</span><br>
+						<span class="sodertext">Orders (256)</span>
+  				</p>
+  			</div>
+				<div>
+					<input style="margin: 4px;" type="checkbox" id="cloth" name="cloth1" value="shirt">
+				</div>
+  		</div>
+  	</div>
+
+  	<div class="px-2">
+  		<a href="Dashboardproduct.html"><img class="shoes4img" src="img/shoes.png"></a>
+  		<div class="imgspacediv my-2">
+  			<div class="p-2">
+  				<p class="blsnetext">Sneakers <br>
+	  				<span class="salepricetext7">$55.00</span> 
+	  				<br>
+	  				<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="sfapricetext">4.5</span><br>
+						<span class="sodertext">Orders (256)</span>
+  				</p>
+  			</div>
+				<div>
+					<input style="margin: 4px;" type="checkbox" id="cloth" name="cloth1" value="shirt">
+				</div>
+  		</div>
+  	</div>
+
+  	<div class="px-2">
+  		<a href="Dashboardproduct.html"><img class="shoes4img" src="img/shoes.png"></a>
+  		<div class="imgspacediv my-2">
+  			<div class="p-2">
+  				<p class="blsnetext">Sneakers <br>
+	  				<span class="salepricetext7">$55.00</span> 
+	  				<br>
+	  				<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="sfapricetext">4.5</span><br>
+						<span class="sodertext">Orders (256)</span>
+  				</p>
+  			</div>
+				<div>
+					<input style="margin: 4px;" type="checkbox" id="cloth" name="cloth1" value="shirt">
+				</div>
+  		</div>
+  	</div>
+
+  	<div class="px-2">
+  		<a href="Dashboardproduct.html"><img class="shoes4img" src="img/shoes.png"></a>
+  		<div class="imgspacediv my-2">
+  			<div class="p-2">
+  				<p class="blsnetext">Sneakers <br>
+	  				<span class="salepricetext7">$55.00</span> 
+	  				<br>
+	  				<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="sfapricetext">4.5</span><br>
+						<span class="sodertext">Orders (256)</span>
+  				</p>
+  			</div>
+				<div>
+					<input style="margin: 4px;" type="checkbox" id="cloth" name="cloth1" value="shirt">
+				</div>
+  		</div>
+  	</div>
+
+  </div>
+
+  <div class="imgdirdiv mx-5  mt-2">
+  	<div class="px-2">
+  		<a href="Dashboardproduct.html"><img class="shoes4img" src="img/shoes.png"></a>
+  		<div class="imgspacediv my-2">
+  			<div class="p-2">
+  				<p class="blsnetext">Sneakers <br>
+	  				<span class="salepricetext7">$55.00</span> 
+	  				<br>
+	  				<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="sfapricetext">4.5</span><br>
+						<span class="sodertext">Orders (256)</span>
+  				</p>
+  			</div>
+				<div>
+					<input style="margin: 4px;" type="checkbox" id="cloth" name="cloth1" value="shirt">
+				</div>
+  		</div>
+  	</div>
+
+  	<div class="px-2">
+  		<a href="Dashboardproduct.html"><img class="shoes4img" src="img/shoes.png"></a>
+  		<div class="imgspacediv my-2">
+  			<div class="p-2">
+  				<p class="blsnetext">Sneakers <br>
+	  				<span class="salepricetext7">$55.00</span> 
+	  				<br>
+	  				<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="sfapricetext">4.5</span><br>
+						<span class="sodertext">Orders (256)</span>
+  				</p>
+  			</div>
+				<div>
+					<input style="margin: 4px;" type="checkbox" id="cloth" name="cloth1" value="shirt">
+				</div>
+  		</div>
+  	</div>
+
+  	<div class="px-2">
+  		<img class="shoes4img" src="img/shoes.png">
+  		<div class="imgspacediv my-2">
+  			<div class="p-2">
+  				<p class="blsnetext">Sneakers <br>
+	  				<span class="salepricetext7">$55.00</span> 
+	  				<br>
+	  				<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="sfapricetext">4.5</span><br>
+						<span class="sodertext">Orders (256)</span>
+  				</p>
+  			</div>
+				<div>
+					<input style="margin: 4px;" type="checkbox" id="cloth" name="cloth1" value="shirt">
+				</div>
+  		</div>
+  	</div>
+
+  	<div class="px-2">
+  		<img class="shoes4img" src="img/shoes.png">
+  		<div class="imgspacediv my-2">
+  			<div class="p-2">
+  				<p class="blsnetext">Sneakers <br>
+	  				<span class="salepricetext7">$55.00</span> 
+	  				<br>
+	  				<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="sfapricetext">4.5</span><br>
+						<span class="sodertext">Orders (256)</span>
+  				</p>
+  			</div>
+				<div>
+					<input style="margin: 4px;" type="checkbox" id="cloth" name="cloth1" value="shirt">
+				</div>
+  		</div>
+  	</div>
+
+  	<div class="px-2">
+  		<img class="shoes4img" src="img/shoes.png">
+  		<div class="imgspacediv my-2">
+  			<div class="p-2">
+  				<p class="blsnetext">Sneakers <br>
+	  				<span class="salepricetext7">$55.00</span> 
+	  				<br>
+	  				<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="sfapricetext">4.5</span><br>
+						<span class="sodertext">Orders (256)</span>
+  				</p>
+  			</div>
+				<div>
+					<input style="margin: 4px;" type="checkbox" id="cloth" name="cloth1" value="shirt">
+				</div>
+  		</div>
+  	</div>
+  	
+  </div>
+
+  <div class="imgdirdiv mx-5  mt-2">
+  	<div class="px-2">
+  		<img class="shoes4img" src="img/shoes.png">
+  		<div class="imgspacediv my-2">
+  			<div class="p-2">
+  				<p class="blsnetext">Sneakers <br>
+	  				<span class="salepricetext7">$55.00</span> 
+	  				<br>
+	  				<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="sfapricetext">4.5</span><br>
+						<span class="sodertext">Orders (256)</span>
+  				</p>
+  			</div>
+				<div>
+					<input style="margin: 4px;" type="checkbox" id="cloth" name="cloth1" value="shirt">
+				</div>
+  		</div>
+  	</div>
+
+  	<div class="px-2">
+  		<img class="shoes4img" src="img/shoes.png">
+  		<div class="imgspacediv my-2">
+  			<div class="p-2">
+  				<p class="blsnetext">Sneakers <br>
+	  				<span class="salepricetext7">$55.00</span> 
+	  				<br>
+	  				<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="sfapricetext">4.5</span><br>
+						<span class="sodertext">Orders (256)</span>
+  				</p>
+  			</div>
+				<div>
+					<input style="margin: 4px;" type="checkbox" id="cloth" name="cloth1" value="shirt">
+				</div>
+  		</div>
+  	</div>
+
+  	<div class="px-2">
+  		<img class="shoes4img" src="img/shoes.png">
+  		<div class="imgspacediv my-2">
+  			<div class="p-2">
+  				<p class="blsnetext">Sneakers <br>
+	  				<span class="salepricetext7">$55.00</span> 
+	  				<br>
+	  				<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="sfapricetext">4.5</span><br>
+						<span class="sodertext">Orders (256)</span>
+  				</p>
+  			</div>
+				<div>
+					<input style="margin: 4px;" type="checkbox" id="cloth" name="cloth1" value="shirt">
+				</div>
+  		</div>
+  	</div>
+
+  	<div class="px-2">
+  		<img class="shoes4img" src="img/shoes.png">
+  		<div class="imgspacediv my-2">
+  			<div class="p-2">
+  				<p class="blsnetext">Sneakers <br>
+	  				<span class="salepricetext7">$55.00</span> 
+	  				<br>
+	  				<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="sfapricetext">4.5</span><br>
+						<span class="sodertext">Orders (256)</span>
+  				</p>
+  			</div>
+				<div>
+					<input style="margin: 4px;" type="checkbox" id="cloth" name="cloth1" value="shirt">
+				</div>
+  		</div>
+  	</div>
+
+  	<div class="px-2">
+  		<img class="shoes4img" src="img/shoes.png">
+  		<div class="imgspacediv my-2">
+  			<div class="p-2">
+  				<p class="blsnetext">Sneakers <br>
+	  				<span class="salepricetext7">$55.00</span> 
+	  				<br>
+	  				<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="sfapricetext">4.5</span><br>
+						<span class="sodertext">Orders (256)</span>
+  				</p>
+  			</div>
+				<div>
+					<input style="margin: 4px;" type="checkbox" id="cloth" name="cloth1" value="shirt">
+				</div>
+  		</div>
+  	</div>
+  	
+  </div>
+
+  
+</div>
+</body>
+</html> 

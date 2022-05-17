@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasboardorderdetail</title>
+    <link rel="icon" href="favicon.png" type="image/png" sizes="256*256" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="style3.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src=
+"https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.js"></script>
+  <link
+    rel="stylesheet"
+    href=
+"https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.css"
+  />
+  <link
+    rel=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    type="text/css"
+  />
+  
+  <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+  </script>
+  <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+  </script>
+  
+
+</head>
+
+<body>
+  <div class="navdiv p-1 px-6">
+    <div class="imgdirdiv">
+      <div class="outerlogo2">
+        <img style="width: 65px; margin-top: 3px;" src="img/newlogo.png">
+        <!-- <p style="color:white; text-align: center; font-weight: bold;">DROPSHIP</p> -->
+      </div>
+      <div class="mt-3 ms-6">
+          <img class="searimg" src="img/newserch.png">
+          <input style="border: none;" class="inputboxnav " type="search" placeholder="Search" aria-label="Search">
+      </div>
+    </div>
+    <div class="imgdirdiv " style="align-self:center">
+      <div>
+        <div >
+          <select name="cars" id="cars" class="nacdropdown">
+            <option class="optiondiv" value="volvo">United States</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+        <p class="stdrop mb-0">store.dropship.shopping</p>
+      </div>
+      <div class="mx-4">
+        <img class="Sneakersnav" src="img/sneaker.png">
+      </div>
+      <div style="align-self: center;">
+        <img  src="img/download.png">
+      </div>
+    </div>
+  </div>
+
+<div class="sidebar ps-6 mt-12">
+  <a href="Dashboardhome.html"><img class="me-2" src="img/home.png"> Home</a>
+  <a href="Dasboardproductdata.html"><img class="me-2" src="img/product.png"></i> Products</a>
+  <a href="Dasboardorder.html"><img class="me-2" src="img/redorder.png"></i> Orders</a>
+  <a href="Dashboardchattbl.html"><img class="me-2"src="img/chaticon.png"></i> Chats</a>
+  <a href="Dasboardsalesanalytics.html"><img class="me-2" src="img/sales.png"> Sales Analytics</a>
+  <a href="Dasboardadvertisment.html"><img class="me-2" src="img/notification.png"></i> Advertisements</a>
+  <a href="Dasboardsubscriptions.html"><img class="me-2" src="img/subsuscribe.png"></i> Subscriptions</a>
+  <hr style="margin-left: -75px;margin-top: 30px;">
+  <a href="Dasboardmyaccount.html"><img class="me-2" src="img/myacc.png"> My Account</a>
+  <a href="Dasboardsetting.html"><img class="me-2" src="img/setting.png"></i> Settings</a>
+</div>
+
+<div class="main ">
+	<div class="mx-5 py-4">
+		<a href="Dasboardorder.html"><img  src="img/order.png"></a>
+	</div>
+	<div class="selectdiv mx-6">
+    <p class="Viewtext">ORDER STATUS</p>
+    <select name="cars" id="cars" class="redselectbox">
+      <option  class="optiondiv" value="volvo">PENDING</option>
+      <option value="saab">Saab</option>
+      <option value="opel">Opel</option>
+      <option value="audi">Audi</option>
+    </select>
+  </div> 
+
+  <div class="row mx-5 mt-4" >
+    <div class="col-sm-6 ">
+      <div class="addressdiv p-4 pb-5">
+        <p class="tblheadtext mt-1">Order Details</p>
+        <div class="imgspacediv pt-2">
+          <div class="imgdirdiv">
+            <div>
+              <img class="Snedasimg" src="img/shoes.png">
+            </div>
+            <div class="ms-3">
+              <p class="selectpen mb-2">Sneakers</p>
+              <p class="datetext mb-2">$52.50</p>
+              <p class="creditext mb-2">Color : </p>
+              <p class="creditext mb-2">Size : <span class="rembtext"> 42</span></p>
+              <p class="creditext mb-2">Quantity : <span class="rembtext"> x1</span></p>
+            </div>
+          </div>
+          <div class="imgdirdiv me-4">
+            <div>
+              <img class="Snedasimg" src="img/girlplate.png">
+            </div>
+            <div class="ms-3">
+              <p class="selectpen mb-2">Ribbed Knit B...</p>
+              <p class="datetext mb-2">$52.50</p>
+              <p class="creditext mb-2">Color : </p>
+              <p class="creditext mb-2">Size : <span class="rembtext"> 42</span></p>
+              <p class="creditext mb-2">Quantity : <span class="rembtext"> x1</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="addressdiv p-4">
+        <div class="imgspacediv">
+          <p class="tblheadtext">Buyer Details</p>
+          <div class="dasprotbl ">
+            <p class="dasprotext px-3 pt-1 ">SEND MESSAGE</p>
+          </div>
+        </div>
+        <div>
+          <div class="imgspacediv">
+            <p class="subnmetext">Name</p>
+            <p class="subnmetexts">Mary Davis</p>
+          </div>
+          <div class="imgspacediv">
+            <p class="subaddrestext">Address</p>
+            <p class="subaddrestext01">2501 Stevens Ave<br> Minneapolis, MN 55404<br> USA</p>
+          </div>
+          <div class="imgspacediv">
+            <p class="subaddrestext">Email</p>
+            <p class="usbluetext">marydavis@gmail.com</p>
+          </div>
+          <div class="imgspacediv">
+            <p class="subaddrestext">Phone Number</p>
+            <p class="usbluetext">+1-808-143-8506</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row mx-5 my-4 mb-6">
+    <div class="col-sm-6 ">
+      <div class="addressdiv p-4">
+        <p class="tblheadtext">Shipping Details</p>
+        <div>
+          <div class="imgspacediv">
+            <p class="subnmetext">Shipping Method</p>
+            <p class="subnmetexts">Standard</p>
+          </div>
+          <div class="imgspacediv">
+            <p class="subaddrestext">Address</p>
+            <p class="subaddrestext01">2501 Stevens Ave<br> Minneapolis,<br> MN 55404<br> USA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 ">
+      <div class="addressdiv p-4">
+        <p class="tblheadtext ">Payment Details</p>
+        <div class="imgspacediv">
+          <div>
+            <p class="subaddrestext mb-1">Subtotal:</p>
+            <p class="subaddrestext mb-2">Taxes:</p>
+            <p class="subaddrestext mb-1">Shipping:</p>
+          </div>
+          <div>
+            <p class="subaddrestext mb-1">US$167.50</p>
+            <p class="subaddrestext mb-2">US$55.00</p>
+            <p class="subaddrestext mb-1">US$10.00</p>
+          </div>
+        </div>
+        <div class="line2div my-2 " ></div>
+        <div class="imgspacediv">
+          <div>
+            <p class="subaddrestext">Grand Total:</p>
+          </div>
+          <div>
+            <p class="subnmetexts">US$232.50</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html> 

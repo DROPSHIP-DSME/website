@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livestream</title>
+    <link rel="icon" href="favicon.png" type="image/png" sizes="256*256" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	    <link rel="stylesheet" href="style3.css" />
+</head>
+<body style="background-color:#f2f2f2">
+    <div>
+    	<nav class="navbar navbar-expand-lg navbar-light new ">
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="outerlogo2">
+	            <img style="width: 75px; margin-top: 3px;" src="img/logored.png">
+	            <!-- <p style="color:white; text-align: center; font-weight: bold;">DROPSHIP</p> -->
+	        </div>
+
+	        <div style="margin-left:13px;" class="collapse navbar-collapse" id="navbarSupportedContent">
+	            <ul style="margin-left:13px;font-family:Open Sans;color: #000000;" class="navbar-nav mr-auto">
+	                <li class="nav-item active">
+	                    <a class="nav-link2" href="#">About </a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link2" href="#">Livestrems</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link2  " href="#">shop</a>
+	                </li>
+
+	                <li class="nav-item">
+	                    <a class="nav-link2" href="#">pop-up-events</a>
+	                </li>
+	            </ul> 
+	            <form class="form-inline my-2 my-lg-0">
+
+	                <div class="inputbox">
+	                    <img class="searimg" src="img/newserch.png">
+	                    <input style="border: none;" class="form-control2" type="search" placeholder="Search" aria-label="Search">
+	                </div>
+
+	                <!-- <img style="height: 37px;" src="search.png"> -->
+
+	                <!-- <input class="form-control" type="search" placeholder="Search" aria-label="Search"> -->
+	            </form> 
+	            <div class="navimg" >
+	                <div >
+	                    <img style="height:20px; width:22px;" src="img/like.png">
+	                </div>
+	                <div  style="display: flex; flex-direction: row;align-items: center;">
+	                    <img style="height:21px; width:19px;" src="img/cart.png" alt="add to cart">
+	                    <span style="font-size:bold;color:#000000;padding-left: 4px;">0</span>
+	                </div>
+	                <div style="">
+	                    <img style="height:20px; width:20px;" src="img/user.png" alt="Italian Trulli">
+	                </div>
+	            </div>     
+	        </div>
+        </nav>
+        <div>
+        	<div class="livediv">
+        		<p class="textlivestream">Livestreams</p>
+        		<p class="counttext">506 livestreams</p>
+        	</div>
+        	<div class="linerowdiv">
+        		<div class="alldiv">
+        			<p class="textall">ALL</p>
+        		</div>
+        		<div class="alldivcolor">
+        			<p class="textcloth">CLOTHING & SHOES</p>
+        		</div>
+        		<div class="alldiv">
+        			<p class="textall">BEAUTY & HAIR</p>
+        		</div>
+        		<div class="alldiv">
+        			<p class="textall">ELECTRONICS</p>
+        		</div>
+        		<div class="alldiv">
+        			<p class="textall">FURNITURE</p>
+        		</div>
+        	</div>
+        </div>
+        <div class="row selectmaindiv p-3">
+        	<div class="col-sm-4 px-4 ">
+        		<p class="categorytext">CATEGORIES</p>
+        		<div class="categorydiv pe-4">
+        			<div>
+        				<input type="checkbox" id="cloth" name="cloth1" value="shirt">
+ 					    <label class="shirttext"> T-Shirts</label><br>
+ 					    <input type="checkbox" id="cloth" name="cloth1" value="shirt">
+ 					    <label class="shirttext">Tops, Blouses</label><br>
+ 					    <input type="checkbox" id="cloth" name="cloth1" value="shirt">
+ 					    <label class="shirttext">Dresses</label><br>
+ 					    <input type="checkbox" id="cloth" name="cloth1" value="shirt">
+ 					    <label class="shirttext">Suits</label><br>
+        			</div>
+        			<div>
+        				<input type="checkbox" id="cloth" name="cloth2" value="Denim">
+ 					    <label class="shirttext"> Denim</label><br>
+ 					    <input type="checkbox" id="cloth" name="cloth2" value="Denim">
+ 					    <label class="shirttext"> Beachwear</label><br>
+ 					    <input type="checkbox" id="cloth" name="cloth2" value="Denim">
+ 					    <label class="shirttext"> Trainers</label><br>
+ 					    <input type="checkbox" id="cloth" name="cloth2" value="Denim">
+ 					    <label class="shirttext"> Sandals</label><br>
+        			</div>
+        		</div>
+        		
+        	</div>
+        	<div class="col-sm-2" >
+        		<p class="categorytext">LANGUAGES</p>
+    			<div>
+				    <input type="checkbox" id="LANGUAGES" name="LANGUAGES" value="shirt">
+				    <label class="shirttext"> French</label><br>
+				    <input type="checkbox" id="LANGUAGES" name="LANGUAGES" value="shirt">
+				    <label class="shirttext">Spanish</label><br>
+				    <input type="checkbox" id="LANGUAGES" name="LANGUAGES" value="shirt">
+				    <label class="shirttext">French</label><br>
+				    <input type="checkbox" id="LANGUAGES" name="LANGUAGES" value="shirt">
+				    <label class="shirttext">Korean</label><br>
+				</div>
+    		</div>
+        	<div class="col-sm-3">
+        		<p class="categorytext">LOCATION</p>
+        		<div >
+		    		<select name="cars" id="cars" class="liveselectdiv">
+					    <option class="optiondiv" value="volvo">United States</option>
+					    <option value="saab">Saab</option>
+					    <option value="opel">Opel</option>
+					    <option value="audi">Audi</option>
+				    </select>
+	    	    </div>
+        	</div>
+        	<div class="col-sm-3">
+        		<p class="categorytext">VIEWER RANGE</p>
+        		
+        		<div >
+        			<ul class="progressbar">
+				        <li class="active">Step 1</li>
+				        <li>Step 2</li>
+				        <li>Step 3</li>
+			        </ul>
+        		</div>
+                <div class="alldivclear">
+					<p class="textall">*CLEAR FILTERS</p>
+				</div>
+        	</div>
+        	
+        </div>
+        <div class="mx-7 my-4">
+        	<div class="selectrightdiv" >
+	    		<p class="Viewtext">SORT BY</p>
+	    		<select name="cars" id="cars" class="selectnumbox">
+				    <option class="optiondiv" value="volvo">Number of Viewers - Ascending</option>
+				    <option value="saab">Saab</option>
+				    <option value="opel">Opel</option>
+				    <option value="audi">Audi</option>
+			    </select>
+    	    </div>
+        </div>
+        <div class="imgdirdiv mx-7 ps-3">
+        	<div class="card">
+        		<div style="position:absolute;margin: 5%;">
+					<img style="" src="img/livebox.png">
+					<img style="margin-left:3px;" src="img/followbox.png">
+				</div>
+					<img class="copyimg"   src="img/copybox.png">
+					<img class="longdressimg" src="img/dress.png">
+				<div class="imgdowndiv my-2">
+        			<img class="girlimgg" src="img/girl.png">
+        			<p class="marthatext ">MARTHA STEWART<br>
+        				<span class="saletext">50% off Friday Sale!</span></p>
+        		</div>
+        	</div>
+        	<div class="card">
+        		<div style="position:absolute;margin: 5%;">
+					<img style="" src="img/livebox.png">
+					<img style="margin-left:3px;" src="img/followbox.png">
+				</div>
+					<img class="copyimg"   src="img/copybox.png">
+					<img class="longdressimg" src="img/dress.png">
+				<div class="imgdowndiv my-2">
+        			<img class="girlimgg" src="img/girl.png">
+        			<p class="marthatext ">MARTHA STEWART<br>
+        				<span class="saletext">50% off Friday Sale!</span></p>
+        		</div>
+        	</div>
+        	<div class="card">
+        		<div style="position:absolute;margin: 5%;">
+					<img style="" src="img/livebox.png">
+					<img style="margin-left:3px;" src="img/followbox.png">
+				</div>
+					<img class="copyimg"   src="img/copybox.png">
+					<img class="longdressimg" src="img/dress.png">
+				<div class="imgdowndiv my-2">
+        			<img class="girlimgg" src="img/girl.png">
+        			<p class="marthatext ">MARTHA STEWART<br>
+        				<span class="saletext">50% off Friday Sale!</span></p>
+        		</div>
+        	</div>
+        	<div class="card">
+        		<div style="position:absolute;margin: 5%;">
+					<img style="" src="img/livebox.png">
+					<img style="margin-left:3px;" src="img/followbox.png">
+				</div>
+					<img class="copyimg"   src="img/copybox.png">
+					<img class="longdressimg" src="img/dress.png">
+				<div class="imgdowndiv my-2">
+        			<img class="girlimgg" src="img/girl.png">
+        			<p class="marthatext ">MARTHA STEWART<br>
+        				<span class="saletext">50% off Friday Sale!</span></p>
+        		</div>
+        	</div>
+        	<div class="card">
+        		<div style="position:absolute;margin: 5%;">
+					<img style="" src="img/livebox.png">
+					<img style="margin-left:3px;" src="img/followbox.png">
+				</div>
+					<img class="copyimg"   src="img/copybox.png">
+					<img class="longdressimg" src="img/dress.png">
+				<div class="imgdowndiv my-2">
+        			<img class="girlimgg" src="img/girl.png">
+        			<p class="marthatext ">MARTHA STEWART<br>
+        				<span class="saletext">50% off Friday Sale!</span></p>
+        		</div>
+        	</div>
+        </div>
+        
+        <div class="imgdirdiv mx-7 ps-3">
+        	<div class="card">
+        		<div style="position:absolute;margin: 5%;">
+					<img style="" src="img/livebox.png">
+					<img style="margin-left:3px;" src="img/followbox.png">
+				</div>
+					<img class="copyimg"   src="img/copybox.png">
+					<img class="longdressimg" src="img/dress.png">
+				<div class="imgdowndiv my-2">
+        			<img class="girlimgg" src="img/girl.png">
+        			<p class="marthatext ">MARTHA STEWART<br>
+        				<span class="saletext">50% off Friday Sale!</span></p>
+        		</div>
+        	</div>
+        	<div class="card">
+        		<div style="position:absolute;margin: 5%;">
+					<img style="" src="img/livebox.png">
+					<img style="margin-left:3px;" src="img/followbox.png">
+				</div>
+					<img class="copyimg"   src="img/copybox.png">
+					<img class="longdressimg" src="img/dress.png">
+				<div class="imgdowndiv my-2">
+        			<img class="girlimgg" src="img/girl.png">
+        			<p class="marthatext ">MARTHA STEWART<br>
+        				<span class="saletext">50% off Friday Sale!</span></p>
+        		</div>
+        	</div>
+        	<div class="card">
+        		<div style="position:absolute;margin: 5%;">
+					<img style="" src="img/livebox.png">
+					<img style="margin-left:3px;" src="img/followbox.png">
+				</div>
+					<img class="copyimg"   src="img/copybox.png">
+					<img class="longdressimg" src="img/dress.png">
+				<div class="imgdowndiv my-2">
+        			<img class="girlimgg" src="img/girl.png">
+        			<p class="marthatext ">MARTHA STEWART<br>
+        				<span class="saletext">50% off Friday Sale!</span></p>
+        		</div>
+        	</div>
+        	<div class="card">
+        		<div style="position:absolute;margin: 5%;">
+					<img style="" src="img/livebox.png">
+					<img style="margin-left:3px;" src="img/followbox.png">
+				</div>
+					<img class="copyimg"   src="img/copybox.png">
+					<img class="longdressimg" src="img/dress.png">
+				<div class="imgdowndiv my-2">
+        			<img class="girlimgg" src="img/girl.png">
+        			<p class="marthatext ">MARTHA STEWART<br>
+        				<span class="saletext">50% off Friday Sale!</span></p>
+        		</div>
+        	</div>
+        	<div class="card">
+        		<div style="position:absolute;margin: 5%;">
+					<img style="" src="img/livebox.png">
+					<img style="margin-left:3px;" src="img/followbox.png">
+				</div>
+					<img class="copyimg"   src="img/copybox.png">
+					<img class="longdressimg" src="img/dress.png">
+				<div class="imgdowndiv my-2">
+        			<img class="girlimgg" src="img/girl.png">
+        			<p class="marthatext ">MARTHA STEWART<br>
+        				<span class="saletext">50% off Friday Sale!</span></p>
+        		</div>
+        	</div>
+        </div>
+        <div class="imgdirdiv mx-7 ps-3">
+        	<div class="card">
+        		<div style="position:absolute;margin: 5%;">
+					<img style="" src="img/livebox.png">
+					<img style="margin-left:3px;" src="img/followbox.png">
+				</div>
+					<img class="copyimg"   src="img/copybox.png">
+					<img class="longdressimg" src="img/dress.png">
+				<div class="imgdowndiv my-2">
+        			<img class="girlimgg" src="img/girl.png">
+        			<p class="marthatext ">MARTHA STEWART<br>
+        				<span class="saletext">50% off Friday Sale!</span></p>
+        		</div>
+        	</div>
+        	<div class="card">
+        		<div style="position:absolute;margin: 5%;">
+					<img style="" src="img/livebox.png">
+					<img style="margin-left:3px;" src="img/followbox.png">
+				</div>
+					<img class="copyimg"   src="img/copybox.png">
+					<img class="longdressimg" src="img/dress.png">
+				<div class="imgdowndiv my-2">
+        			<img class="girlimgg" src="img/girl.png">
+        			<p class="marthatext ">MARTHA STEWART<br>
+        				<span class="saletext">50% off Friday Sale!</span></p>
+        		</div>
+        	</div>
+        	<div class="card">
+        		<div style="position:absolute;margin: 5%;">
+					<img style="" src="img/livebox.png">
+					<img style="margin-left:3px;" src="img/followbox.png">
+				</div>
+					<img class="copyimg"   src="img/copybox.png">
+					<img class="longdressimg" src="img/dress.png">
+				<div class="imgdowndiv my-2">
+        			<img class="girlimgg" src="img/girl.png">
+        			<p class="marthatext ">MARTHA STEWART<br>
+        				<span class="saletext">50% off Friday Sale!</span></p>
+        		</div>
+        	</div>
+        	<div class="card">
+        		<div style="position:absolute;margin: 5%;">
+					<img style="" src="img/livebox.png">
+					<img style="margin-left:3px;" src="img/followbox.png">
+				</div>
+					<img class="copyimg"   src="img/copybox.png">
+					<img class="longdressimg" src="img/dress.png">
+				<div class="imgdowndiv my-2">
+        			<img class="girlimgg" src="img/girl.png">
+        			<p class="marthatext ">MARTHA STEWART<br>
+        				<span class="saletext">50% off Friday Sale!</span></p>
+        		</div>
+        	</div>
+        	<div class="card">
+        		<div style="position:absolute;margin: 5%;">
+					<img style="" src="img/livebox.png">
+					<img style="margin-left:3px;" src="img/followbox.png">
+				</div>
+					<img class="copyimg"   src="img/copybox.png">
+					<img class="longdressimg" src="img/dress.png">
+				<div class="imgdowndiv my-2">
+        			<img class="girlimgg" src="img/girl.png">
+        			<p class="marthatext ">MARTHA STEWART<br>
+        				<span class="saletext">50% off Friday Sale!</span></p>
+        		</div>
+        	</div>
+        </div>
+
+        <div class="mt-8 p-6 " style="background-color:#1A1A1A;">
+    		<div class="bardiv">
+    			<div style="display:flex;flex-direction: row;align-items: center;width: -webkit-fill-available;">
+    				<div>
+    					<img style="" src="img/logored.png">
+    				</div>
+    				<p class="sharetext">Share your products globally.</p>
+    			</div>
+    			<div style="display:flex;flex-direction: row;">
+    				<div class="applediv">
+                		<div >
+                			<img  src="img/apple.png">
+                		</div>
+                		<div style="align-self: normal;margin-top: 4%">
+                			<p class="appletext">Download on the<br> 
+                				<span class="apptext">App store</span></p>
+                		</div>
+                	</div>
+                	<div class="applediv">
+                		<div >
+                			<img  src="img/playstore.png">
+                		</div>
+                		<div style="align-self: normal;margin-top: 4%">
+                			<p class="appletext">GET IT ON<br> 
+                				<span class="apptext">Google Play</span></p>
+                		</div>
+                	</div>
+    			</div>
+    		</div>
+    		<div style="border-bottom: 1px solid #B3B3B3;margin-top:2%"></div>
+    		<div class="lastdiv" >
+	        	<div class="accountrowdiv">
+	        		<div>
+	        			<p class="shoptext">Shop</p>
+	        			<p class="golivetext">Go Live</p>
+	        			<p class="golivetext">Livestreams</p>
+	        			<p class="golivetext">Shop</p>
+	        			<p class="golivetext">Pop-up Events</p>
+	        		</div>
+					<div>
+						<p class="shoptext">Account</p>
+						<p class="golivetext">Login/Sign Up</p>
+	        			<p class="golivetext">My Account</p>
+	        			<p class="golivetext">My Stores</p>
+	        			<p class="golivetext">Seller’s Dashboard</p>
+					</div>
+				</div>
+				<div style="width: 20%;">
+					<p class="shoptext" style="text-align:right;">Contact Us</p>
+					<div class="displaydiv">
+						<p class="golivetext">+1-555-555-5555</p>
+						<img style="width: 15px;height: 15px;margin-left: 2%;margin-top:1%" src="img/phoneicon.png">
+					</div>
+					<div class="displaydiv">
+						<p class="golivetext">info@dropship.com</p>
+						<img style="width: 15px;height: 15px;margin-left: 2%;margin-top:1%" src="img/mailicon.png">
+					</div>
+					<div class="displaydiv2">
+						<img style="margin-left:2%;margin-right: 2%;" src="img/youtubeicon.png">
+						<img style="margin-left:5%;margin-right: 2%;" src="img/twitericon.png">
+						<img style="margin-left:5%;margin-right: 2%;" src="img/instaicon.png">
+						<img style="margin-left:5%" src="img/fbicon.png">
+					</div>
+				</div>
+            </div>
+            <div class="lastdiv" >
+            	<div >
+            		<p class="privacytext">Privacy Policy  |   Terms & Conditions  |  Contact Us</p>
+            	</div>
+            	<div>
+            		<p class="privacytext">©2021 Dropship All Rights Reserved</p>
+            	</div>
+            </div>
+    	</div>
+    </div>
+</body>
+</html>
